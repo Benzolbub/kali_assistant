@@ -1,0 +1,27 @@
+{
+  "nmap": {
+    "description": "Network exploration and security auditing tool",
+    "common_commands": {
+      "basic_scan": "nmap -sV -O target",
+      "stealth_scan": "nmap -sS -T4 target",
+      "full_scan": "nmap -A -T4 -p- target"
+    },
+    "best_practices": [
+      "Always get permission before scanning networks",
+      "Use -sS for stealth scans instead of -sT",
+      "Limit scan intensity with --max-rate to avoid detection"
+    ]
+  },
+  "metasploit": {
+    "description": "Penetration testing framework",
+    "modules": {
+      "exploit": "use exploit/path",
+      "payload": "set payload windows/meterpreter/reverse_tcp",
+      "auxiliary": "use auxiliary/scanner/portscan/tcp"
+    }
+  },
+  "sqlmap": {
+    "description": "Automatic SQL injection tool",
+    "usage": "sqlmap -u 'http://target.com?id=1'"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "api": {
+    "ollama_endpoint": "http://localhost:11434/api/chat",
+    "timeout": 35
+  },
+  "personality": {
+    "name": "Kali-SecAssistant",
+    "tone": "friendly",
+    "verbosity": "detailed",
+    "expertise": "cybersecurity"
+  },
+  "security": {
+    "require_confirmation": true,
+    "max_output": 6000,
+    "timeout": 60
+  },
+  "context": {
+    "memory_size": 15,
+    "persist_history": true
+  }
+}
